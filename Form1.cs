@@ -56,15 +56,15 @@ namespace E_Voting_System
             Timer.Start();
         }
 
-        
+
 
         private void Timer_Tick(object sender, EventArgs e)
         {
             if (activeButton == null)
                 return;
 
-                Size originalSize = (activeButton == btnStudent) ? originalSizeS : originalSizeA;
-                Point originalLocation = (activeButton == btnStudent) ? originalLocationS : originalLocationA;
+            Size originalSize = (activeButton == btnStudent) ? originalSizeS : originalSizeA;
+            Point originalLocation = (activeButton == btnStudent) ? originalLocationS : originalLocationA;
 
             if (activeButton.Bounds.Contains(activeButton.Parent.PointToClient(Cursor.Position)))
             {
@@ -93,6 +93,16 @@ namespace E_Voting_System
                     Timer.Stop();
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            
         }
     }
 }
