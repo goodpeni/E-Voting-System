@@ -65,7 +65,7 @@
             lblLogin.BackColor = Color.Transparent;
             lblLogin.Font = new Font("Impact", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogin.ForeColor = Color.White;
-            lblLogin.Location = new Point(285, 32);
+            lblLogin.Location = new Point(205, 9);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(226, 80);
             lblLogin.TabIndex = 2;
@@ -141,7 +141,7 @@
             panel1.Controls.Add(txtStudentID);
             panel1.Controls.Add(chkShowPass);
             panel1.Controls.Add(txtStudentPass);
-            panel1.Location = new Point(214, 103);
+            panel1.Location = new Point(127, 91);
             panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(388, 283);
@@ -154,7 +154,7 @@
             BackColor = SystemColors.AppWorkspace;
             BackgroundImage = Properties.Resources.Untitled_design__2_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 433);
+            ClientSize = new Size(618, 401);
             Controls.Add(panel1);
             Controls.Add(lblLogin);
             DoubleBuffered = true;

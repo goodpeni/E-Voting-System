@@ -97,12 +97,13 @@ namespace E_Voting_System
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-            
+
         }
+
     }
 }

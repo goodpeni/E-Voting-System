@@ -35,8 +35,6 @@
             LblTitle = new Label();
             LblStudent = new Label();
             LblAdmin = new Label();
-            PnlMenu = new Panel();
-            PnlMenu.SuspendLayout();
             SuspendLayout();
             // 
             // Timer
@@ -54,7 +52,7 @@
             btnAdmin.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnAdmin.FlatStyle = FlatStyle.Flat;
             btnAdmin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnAdmin.Location = new Point(325, 142);
+            btnAdmin.Location = new Point(450, 148);
             btnAdmin.Name = "btnAdmin";
             btnAdmin.Size = new Size(203, 203);
             btnAdmin.TabIndex = 1;
@@ -71,7 +69,7 @@
             btnStudent.FlatAppearance.MouseOverBackColor = Color.Transparent;
             btnStudent.FlatStyle = FlatStyle.Flat;
             btnStudent.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnStudent.Location = new Point(89, 142);
+            btnStudent.Location = new Point(166, 148);
             btnStudent.Name = "btnStudent";
             btnStudent.Size = new Size(203, 203);
             btnStudent.TabIndex = 0;
@@ -84,7 +82,7 @@
             LblTitle.BackColor = Color.Transparent;
             LblTitle.Font = new Font("Impact", 60F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblTitle.ForeColor = Color.White;
-            LblTitle.Location = new Point(11, 23);
+            LblTitle.Location = new Point(106, 23);
             LblTitle.Name = "LblTitle";
             LblTitle.Size = new Size(606, 98);
             LblTitle.TabIndex = 4;
@@ -97,7 +95,7 @@
             LblStudent.BackColor = Color.Transparent;
             LblStudent.Font = new Font("Arial Black", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblStudent.ForeColor = Color.White;
-            LblStudent.Location = new Point(87, 363);
+            LblStudent.Location = new Point(162, 371);
             LblStudent.Name = "LblStudent";
             LblStudent.Size = new Size(207, 50);
             LblStudent.TabIndex = 2;
@@ -110,25 +108,12 @@
             LblAdmin.BackColor = Color.Transparent;
             LblAdmin.Font = new Font("Arial Black", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblAdmin.ForeColor = Color.White;
-            LblAdmin.Location = new Point(351, 363);
+            LblAdmin.Location = new Point(476, 371);
             LblAdmin.Name = "LblAdmin";
             LblAdmin.Size = new Size(152, 50);
             LblAdmin.TabIndex = 3;
             LblAdmin.Text = "ADMIN";
             LblAdmin.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // PnlMenu
-            // 
-            PnlMenu.BackColor = Color.Transparent;
-            PnlMenu.Controls.Add(LblAdmin);
-            PnlMenu.Controls.Add(LblStudent);
-            PnlMenu.Controls.Add(LblTitle);
-            PnlMenu.Controls.Add(btnStudent);
-            PnlMenu.Controls.Add(btnAdmin);
-            PnlMenu.Location = new Point(110, 31);
-            PnlMenu.Name = "PnlMenu";
-            PnlMenu.Size = new Size(620, 428);
-            PnlMenu.TabIndex = 5;
             // 
             // Form1
             // 
@@ -138,7 +123,11 @@
             BackgroundImage = Properties.Resources.Untitled_design__1_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(803, 490);
-            Controls.Add(PnlMenu);
+            Controls.Add(LblAdmin);
+            Controls.Add(LblStudent);
+            Controls.Add(LblTitle);
+            Controls.Add(btnAdmin);
+            Controls.Add(btnStudent);
             DoubleBuffered = true;
             ForeColor = SystemColors.ControlText;
             Name = "Form1";
@@ -146,9 +135,8 @@
             Text = "Main Interface";
             Load += Form1_Load;
             Resize += Form1_Resize;
-            PnlMenu.ResumeLayout(false);
-            PnlMenu.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -158,6 +146,5 @@
         private Label LblTitle;
         private Label LblStudent;
         private Label LblAdmin;
-        private Panel PnlMenu;
     }
 }
