@@ -37,10 +37,11 @@
             // 
             // btnVoteNow
             // 
-            btnVoteNow.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnVoteNow.Location = new Point(298, 167);
+            btnVoteNow.Font = new Font("Arial Black", 15.75F, FontStyle.Bold);
+            btnVoteNow.ForeColor = SystemColors.ControlText;
+            btnVoteNow.Location = new Point(264, 114);
             btnVoteNow.Name = "btnVoteNow";
-            btnVoteNow.Size = new Size(218, 66);
+            btnVoteNow.Size = new Size(235, 66);
             btnVoteNow.TabIndex = 0;
             btnVoteNow.Text = "Vote Now";
             btnVoteNow.UseVisualStyleBackColor = true;
@@ -48,10 +49,11 @@
             // 
             // btnCheckCandidates
             // 
-            btnCheckCandidates.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnCheckCandidates.Location = new Point(298, 254);
+            btnCheckCandidates.Font = new Font("Arial Black", 15.75F, FontStyle.Bold);
+            btnCheckCandidates.ForeColor = SystemColors.ControlText;
+            btnCheckCandidates.Location = new Point(264, 201);
             btnCheckCandidates.Name = "btnCheckCandidates";
-            btnCheckCandidates.Size = new Size(218, 66);
+            btnCheckCandidates.Size = new Size(235, 66);
             btnCheckCandidates.TabIndex = 1;
             btnCheckCandidates.Text = "Check Candidates";
             btnCheckCandidates.UseVisualStyleBackColor = true;
@@ -60,31 +62,32 @@
             // lblStudentName
             // 
             lblStudentName.AutoSize = true;
-            lblStudentName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblStudentName.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblStudentName.ForeColor = SystemColors.ControlText;
             lblStudentName.Location = new Point(12, 9);
             lblStudentName.Name = "lblStudentName";
-            lblStudentName.Size = new Size(116, 21);
+            lblStudentName.Size = new Size(127, 19);
             lblStudentName.TabIndex = 2;
             lblStudentName.Text = "Student Name: ";
             // 
             // btnLogout
             // 
             btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogout.Location = new Point(689, 9);
+            btnLogout.Location = new Point(702, 9);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(99, 34);
+            btnLogout.Size = new Size(40, 40);
             btnLogout.TabIndex = 3;
-            btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
             btnLogout.Click += btnLogout_Click;
             // 
             // lblYearLevel
             // 
             lblYearLevel.AutoSize = true;
-            lblYearLevel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblYearLevel.Font = new Font("Arial", 12F, FontStyle.Bold);
+            lblYearLevel.ForeColor = SystemColors.ControlText;
             lblYearLevel.Location = new Point(12, 42);
             lblYearLevel.Name = "lblYearLevel";
-            lblYearLevel.Size = new Size(87, 21);
+            lblYearLevel.Size = new Size(97, 19);
             lblYearLevel.TabIndex = 4;
             lblYearLevel.Text = "Year Level: ";
             // 
@@ -92,12 +95,16 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.Untitled_design__1_;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(749, 371);
             Controls.Add(lblYearLevel);
             Controls.Add(btnLogout);
             Controls.Add(lblStudentName);
             Controls.Add(btnCheckCandidates);
             Controls.Add(btnVoteNow);
+            DoubleBuffered = true;
+            ForeColor = SystemColors.ControlText;
             Name = "Form4";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Interface";
