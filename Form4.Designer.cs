@@ -38,7 +38,7 @@
             // btnVoteNow
             // 
             btnVoteNow.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnVoteNow.Location = new Point(183, 111);
+            btnVoteNow.Location = new Point(298, 167);
             btnVoteNow.Name = "btnVoteNow";
             btnVoteNow.Size = new Size(218, 66);
             btnVoteNow.TabIndex = 0;
@@ -49,7 +49,7 @@
             // btnCheckCandidates
             // 
             btnCheckCandidates.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnCheckCandidates.Location = new Point(183, 198);
+            btnCheckCandidates.Location = new Point(298, 254);
             btnCheckCandidates.Name = "btnCheckCandidates";
             btnCheckCandidates.Size = new Size(218, 66);
             btnCheckCandidates.TabIndex = 1;
@@ -60,36 +60,31 @@
             // lblStudentName
             // 
             lblStudentName.AutoSize = true;
-            lblStudentName.BackColor = Color.Transparent;
-            lblStudentName.Font = new Font("Arial Black", 12F, FontStyle.Bold);
-            lblStudentName.ForeColor = Color.White;
+            lblStudentName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblStudentName.Location = new Point(12, 9);
             lblStudentName.Name = "lblStudentName";
-            lblStudentName.Size = new Size(146, 23);
+            lblStudentName.Size = new Size(116, 21);
             lblStudentName.TabIndex = 2;
             lblStudentName.Text = "Student Name: ";
             // 
             // btnLogout
             // 
-            btnLogout.BackgroundImageLayout = ImageLayout.Zoom;
-            btnLogout.FlatAppearance.BorderSize = 0;
             btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogout.Location = new Point(527, 9);
+            btnLogout.Location = new Point(689, 9);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(40, 40);
+            btnLogout.Size = new Size(99, 34);
             btnLogout.TabIndex = 3;
+            btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = true;
             btnLogout.Click += btnLogout_Click;
             // 
             // lblYearLevel
             // 
             lblYearLevel.AutoSize = true;
-            lblYearLevel.BackColor = Color.Transparent;
-            lblYearLevel.Font = new Font("Arial Black", 12F, FontStyle.Bold);
-            lblYearLevel.ForeColor = Color.White;
+            lblYearLevel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblYearLevel.Location = new Point(12, 42);
             lblYearLevel.Name = "lblYearLevel";
-            lblYearLevel.Size = new Size(112, 23);
+            lblYearLevel.Size = new Size(87, 21);
             lblYearLevel.TabIndex = 4;
             lblYearLevel.Text = "Year Level: ";
             // 
@@ -97,22 +92,15 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Untitled_design__1_;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(579, 361);
-            ControlBox = false;
+            ClientSize = new Size(800, 450);
             Controls.Add(lblYearLevel);
             Controls.Add(btnLogout);
             Controls.Add(lblStudentName);
             Controls.Add(btnCheckCandidates);
             Controls.Add(btnVoteNow);
-            DoubleBuffered = true;
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "Form4";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student Interface";
-            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }
