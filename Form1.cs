@@ -95,15 +95,9 @@ namespace E_Voting_System
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

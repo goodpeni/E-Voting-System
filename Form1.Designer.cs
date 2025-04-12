@@ -35,6 +35,7 @@
             LblTitle = new Label();
             LblStudent = new Label();
             LblAdmin = new Label();
+            btnLogout = new Button();
             SuspendLayout();
             // 
             // Timer
@@ -47,6 +48,7 @@
             btnAdmin.BackColor = Color.Transparent;
             btnAdmin.BackgroundImage = Properties.Resources._41;
             btnAdmin.BackgroundImageLayout = ImageLayout.Zoom;
+            btnAdmin.Cursor = Cursors.Hand;
             btnAdmin.FlatAppearance.BorderSize = 0;
             btnAdmin.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnAdmin.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -64,6 +66,7 @@
             btnStudent.BackColor = Color.Transparent;
             btnStudent.BackgroundImage = Properties.Resources._31;
             btnStudent.BackgroundImageLayout = ImageLayout.Zoom;
+            btnStudent.Cursor = Cursors.Hand;
             btnStudent.FlatAppearance.BorderSize = 0;
             btnStudent.FlatAppearance.MouseDownBackColor = Color.Transparent;
             btnStudent.FlatAppearance.MouseOverBackColor = Color.Transparent;
@@ -115,6 +118,24 @@
             LblAdmin.Text = "ADMIN";
             LblAdmin.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = Color.Transparent;
+            btnLogout.BackgroundImage = Properties.Resources.E_VOTING_SYSTEM_LOGO__7_;
+            btnLogout.BackgroundImageLayout = ImageLayout.Zoom;
+            btnLogout.Cursor = Cursors.Hand;
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            btnLogout.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogout.Location = new Point(756, 12);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(35, 35);
+            btnLogout.TabIndex = 5;
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -123,6 +144,8 @@
             BackgroundImage = Properties.Resources.Untitled_design__1_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(803, 490);
+            ControlBox = false;
+            Controls.Add(btnLogout);
             Controls.Add(LblAdmin);
             Controls.Add(LblStudent);
             Controls.Add(LblTitle);
@@ -130,11 +153,11 @@
             Controls.Add(btnStudent);
             DoubleBuffered = true;
             ForeColor = SystemColors.ControlText;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Main Interface";
-            Load += Form1_Load;
-            Resize += Form1_Resize;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,5 +169,6 @@
         private Label LblTitle;
         private Label LblStudent;
         private Label LblAdmin;
+        private Button btnLogout;
     }
 }

@@ -15,9 +15,30 @@ namespace E_Voting_System
         public Form2()
         {
             InitializeComponent();
+            lblLogin.Left = (this.ClientSize.Width - lblLogin.Width) / 2;
+            pnlMAIN.Left = (this.ClientSize.Width - pnlMAIN.Width) / 2;
+            pnlMAIN.BackColor = Color.FromArgb(70, 0, 0, 0);
+            lblStudentID.ForeColor = Color.White;
+            lblPassword.ForeColor = Color.White;
+            chkShowPass.ForeColor = Color.White;
         }
 
-
+        private void Login()
+        {
+            if (txtStudentID.Text == "123456" && txtStudentPass.Text == "123456")
+            {
+                Form4 Form4 = new Form4();
+                Form4.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Student ID or Password is Incorrect!");
+                txtStudentID.Clear();
+                txtStudentPass.Clear();
+                chkShowPass.Checked = false;
+            }
+        }
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             Form1 Form1 = new Form1();
@@ -39,20 +60,15 @@ namespace E_Voting_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtStudentID.Text == "123456" && txtStudentPass.Text == "123456")
-            {
-                Form4 Form4 = new Form4();
-                Form4.Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Student ID or Password is Incorrect!");
-                txtStudentID.Clear();
-                txtStudentPass.Clear();
-                chkShowPass.Checked = false;
-            }
+            Login();
         }
 
+        private void Form2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login();
+            }
+        }
     }
 }

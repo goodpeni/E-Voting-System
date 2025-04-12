@@ -41,52 +41,57 @@
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Segoe UI", 14.25F);
-            lblPassword.Location = new Point(142, 197);
+            lblPassword.Font = new Font("Arial", 14.25F, FontStyle.Bold);
+            lblPassword.Location = new Point(145, 221);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(95, 25);
+            lblPassword.Size = new Size(110, 22);
             lblPassword.TabIndex = 15;
             lblPassword.Text = "Password:";
             // 
             // lblAdminID
             // 
             lblAdminID.AutoSize = true;
-            lblAdminID.Font = new Font("Segoe UI", 14.25F);
-            lblAdminID.Location = new Point(142, 140);
+            lblAdminID.Font = new Font("Arial", 14.25F, FontStyle.Bold);
+            lblAdminID.Location = new Point(145, 137);
             lblAdminID.Name = "lblAdminID";
-            lblAdminID.Size = new Size(94, 25);
+            lblAdminID.Size = new Size(100, 22);
             lblAdminID.TabIndex = 14;
             lblAdminID.Text = "Admin ID:";
             // 
             // btnLogin
             // 
+            btnLogin.BackColor = Color.SeaGreen;
+            btnLogin.BackgroundImageLayout = ImageLayout.Stretch;
             btnLogin.Font = new Font("Segoe UI", 14.25F);
-            btnLogin.Location = new Point(463, 332);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(303, 324);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(122, 45);
             btnLogin.TabIndex = 13;
             btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // btnGoBack
             // 
+            btnGoBack.BackColor = Color.Maroon;
             btnGoBack.Font = new Font("Segoe UI", 14.25F);
-            btnGoBack.Location = new Point(213, 332);
+            btnGoBack.ForeColor = Color.White;
+            btnGoBack.Location = new Point(145, 324);
             btnGoBack.Name = "btnGoBack";
             btnGoBack.Size = new Size(122, 45);
             btnGoBack.TabIndex = 12;
             btnGoBack.Text = "Go Back";
-            btnGoBack.UseVisualStyleBackColor = true;
+            btnGoBack.UseVisualStyleBackColor = false;
             btnGoBack.Click += btnGoBack_Click;
             // 
             // chkShowPass
             // 
             chkShowPass.AutoSize = true;
-            chkShowPass.Font = new Font("Segoe UI", 14.25F);
-            chkShowPass.Location = new Point(425, 253);
+            chkShowPass.Font = new Font("Arial", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            chkShowPass.Location = new Point(202, 291);
             chkShowPass.Name = "chkShowPass";
-            chkShowPass.Size = new Size(160, 29);
+            chkShowPass.Size = new Size(164, 27);
             chkShowPass.TabIndex = 11;
             chkShowPass.Text = "show password";
             chkShowPass.UseVisualStyleBackColor = true;
@@ -95,17 +100,19 @@
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Font = new Font("Showcard Gothic", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogin.Location = new Point(268, 22);
+            lblLogin.BackColor = Color.Transparent;
+            lblLogin.Font = new Font("Impact", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogin.ForeColor = Color.White;
+            lblLogin.Location = new Point(202, 22);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(226, 79);
+            lblLogin.Size = new Size(185, 80);
             lblLogin.TabIndex = 10;
             lblLogin.Text = "LOGIN";
             // 
             // txtAdminPass
             // 
             txtAdminPass.Font = new Font("Segoe UI", 14.25F);
-            txtAdminPass.Location = new Point(313, 194);
+            txtAdminPass.Location = new Point(145, 246);
             txtAdminPass.Name = "txtAdminPass";
             txtAdminPass.PasswordChar = '*';
             txtAdminPass.Size = new Size(272, 33);
@@ -114,7 +121,7 @@
             // txtAdminID
             // 
             txtAdminID.Font = new Font("Segoe UI", 14.25F);
-            txtAdminID.Location = new Point(313, 132);
+            txtAdminID.Location = new Point(145, 162);
             txtAdminID.Name = "txtAdminID";
             txtAdminID.Size = new Size(272, 33);
             txtAdminID.TabIndex = 8;
@@ -123,7 +130,9 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.Untitled_design__2_;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(596, 407);
             Controls.Add(lblPassword);
             Controls.Add(lblAdminID);
             Controls.Add(btnLogin);
@@ -132,6 +141,7 @@
             Controls.Add(lblLogin);
             Controls.Add(txtAdminPass);
             Controls.Add(txtAdminID);
+            DoubleBuffered = true;
             Name = "Form3";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin";

@@ -36,8 +36,8 @@
             btnLogin = new Button();
             lblStudentID = new Label();
             lblPassword = new Label();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
+            pnlMAIN = new Panel();
+            pnlMAIN.SuspendLayout();
             SuspendLayout();
             // 
             // txtStudentID
@@ -65,7 +65,7 @@
             lblLogin.BackColor = Color.Transparent;
             lblLogin.Font = new Font("Impact", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogin.ForeColor = Color.White;
-            lblLogin.Location = new Point(205, 9);
+            lblLogin.Location = new Point(113, -5);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(226, 80);
             lblLogin.TabIndex = 2;
@@ -86,6 +86,7 @@
             // btnGoBack
             // 
             btnGoBack.BackColor = Color.Maroon;
+            btnGoBack.Cursor = Cursors.Hand;
             btnGoBack.FlatStyle = FlatStyle.Flat;
             btnGoBack.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGoBack.ForeColor = Color.White;
@@ -100,6 +101,7 @@
             // btnLogin
             // 
             btnLogin.BackColor = Color.SeaGreen;
+            btnLogin.Cursor = Cursors.Hand;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = Color.White;
@@ -114,16 +116,18 @@
             // lblStudentID
             // 
             lblStudentID.AutoSize = true;
+            lblStudentID.BackColor = Color.Transparent;
             lblStudentID.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblStudentID.Location = new Point(60, 29);
             lblStudentID.Name = "lblStudentID";
-            lblStudentID.Size = new Size(113, 22);
+            lblStudentID.Size = new Size(104, 22);
             lblStudentID.TabIndex = 6;
-            lblStudentID.Text = "Student ID:";
+            lblStudentID.Text = "Username";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
+            lblPassword.BackColor = Color.Transparent;
             lblPassword.Font = new Font("Arial", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPassword.Location = new Point(60, 110);
             lblPassword.Name = "lblPassword";
@@ -131,21 +135,21 @@
             lblPassword.TabIndex = 7;
             lblPassword.Text = "Password:";
             // 
-            // panel1
+            // pnlMAIN
             // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(lblStudentID);
-            panel1.Controls.Add(btnLogin);
-            panel1.Controls.Add(lblPassword);
-            panel1.Controls.Add(btnGoBack);
-            panel1.Controls.Add(txtStudentID);
-            panel1.Controls.Add(chkShowPass);
-            panel1.Controls.Add(txtStudentPass);
-            panel1.Location = new Point(127, 91);
-            panel1.Margin = new Padding(3, 2, 3, 2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(388, 283);
-            panel1.TabIndex = 8;
+            pnlMAIN.BackColor = Color.White;
+            pnlMAIN.Controls.Add(lblStudentID);
+            pnlMAIN.Controls.Add(btnLogin);
+            pnlMAIN.Controls.Add(lblPassword);
+            pnlMAIN.Controls.Add(btnGoBack);
+            pnlMAIN.Controls.Add(txtStudentID);
+            pnlMAIN.Controls.Add(chkShowPass);
+            pnlMAIN.Controls.Add(txtStudentPass);
+            pnlMAIN.Location = new Point(40, 70);
+            pnlMAIN.Margin = new Padding(3, 2, 3, 2);
+            pnlMAIN.Name = "pnlMAIN";
+            pnlMAIN.Size = new Size(388, 283);
+            pnlMAIN.TabIndex = 8;
             // 
             // Form2
             // 
@@ -154,15 +158,18 @@
             BackColor = SystemColors.AppWorkspace;
             BackgroundImage = Properties.Resources.Untitled_design__2_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(618, 401);
-            Controls.Add(panel1);
+            ClientSize = new Size(468, 371);
+            ControlBox = false;
+            Controls.Add(pnlMAIN);
             Controls.Add(lblLogin);
             DoubleBuffered = true;
+            KeyPreview = true;
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Student";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            KeyDown += Form2_KeyDown;
+            pnlMAIN.ResumeLayout(false);
+            pnlMAIN.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,6 +184,6 @@
         private Button btnLogin;
         private Label lblStudentID;
         private Label lblPassword;
-        private Panel panel1;
+        private Panel pnlMAIN;
     }
 }

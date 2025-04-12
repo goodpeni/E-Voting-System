@@ -153,6 +153,116 @@ namespace E_Voting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__10_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (10)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__11_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (11)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__5_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__6_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__7_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__8_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO__9_ {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image1 {
+            get {
+                object obj = ResourceManager.GetObject("image1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image2 {
+            get {
+                object obj = ResourceManager.GetObject("image2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image3 {
+            get {
+                object obj = ResourceManager.GetObject("image3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ki {
+            get {
+                object obj = ResourceManager.GetObject("ki", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled_design {
             get {
                 object obj = ResourceManager.GetObject("Untitled design", resourceCulture);
