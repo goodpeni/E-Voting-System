@@ -223,6 +223,46 @@ namespace E_Voting_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO_20250413_115438_0000 {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO_20250413_115438_0000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO_20250413_115438_0001 {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO_20250413_115438_0001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO_20250413_115438_00011 {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO_20250413_115438_00011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap E_VOTING_SYSTEM_LOGO_20250413_115438_0002 {
+            get {
+                object obj = ResourceManager.GetObject("E-VOTING SYSTEM LOGO_20250413_115438_0002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image1 {
             get {
                 object obj = ResourceManager.GetObject("image1", resourceCulture);

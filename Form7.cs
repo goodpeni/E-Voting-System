@@ -15,6 +15,9 @@ namespace E_Voting_System
         public Form7()
         {
             InitializeComponent();
+            btnAddStudent.ForeColor = Color.White;
+            btnAddCandidate.ForeColor = Color.White;
+            btnStatistics.ForeColor = Color.White;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -39,6 +42,48 @@ namespace E_Voting_System
         }
 
         private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            Form10 Form10 = new Form10();
+            Form10.Show();
+            this.Hide();
+        }
+
+        private void picBOXStud_Click(object sender, EventArgs e)
+        {
+            Form8 Form8 = new Form8();
+            Form8.Show();
+            this.Hide();
+        }
+
+        private void picBOXCan_Click(object sender, EventArgs e)
+        {
+            Form9 Form9 = new Form9();
+            Form9.Show();
+            this.Hide();
+        }
+
+        private void picBOXStats_Click(object sender, EventArgs e)
+        {
+            Form10 Form10 = new Form10();
+            Form10.Show();
+            this.Hide();
+        }
+
+        private void lblStud_Click(object sender, EventArgs e)
+        {
+            Form8 Form8 = new Form8();
+            Form8.Show();
+            this.Hide();
+        }
+
+        private void lblCan_Click(object sender, EventArgs e)
+        {
+            Form9 Form9 = new Form9();
+            Form9.Show();
+            this.Hide();
+        }
+
+        private void lblStats_Click(object sender, EventArgs e)
         {
             Form10 Form10 = new Form10();
             Form10.Show();
