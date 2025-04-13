@@ -140,6 +140,7 @@
             pnlVote.Size = new Size(233, 281);
             pnlVote.TabIndex = 5;
             pnlVote.Click += pnlVote_Click;
+           
             // 
             // lblVDesc
             // 

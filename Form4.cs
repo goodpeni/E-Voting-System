@@ -120,5 +120,6 @@ namespace E_Voting_System
             Form6.Show();
             this.Hide();
         }
+
     }
 }

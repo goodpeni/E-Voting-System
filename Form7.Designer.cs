@@ -33,12 +33,18 @@
             btnAddCandidate = new Button();
             btnAddStudent = new Button();
             btnStatistics = new Button();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // btnLogout
             // 
             btnLogout.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnLogout.Location = new Point(689, 9);
+            btnLogout.Location = new Point(600, 12);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(99, 34);
             btnLogout.TabIndex = 7;
@@ -58,50 +64,89 @@
             // 
             // btnAddCandidate
             // 
-            btnAddCandidate.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnAddCandidate.Location = new Point(298, 202);
+            btnAddCandidate.BackColor = Color.Transparent;
+            btnAddCandidate.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            btnAddCandidate.ForeColor = Color.Black;
+            btnAddCandidate.Location = new Point(45, 21);
             btnAddCandidate.Name = "btnAddCandidate";
-            btnAddCandidate.Size = new Size(218, 66);
+            btnAddCandidate.Size = new Size(109, 50);
             btnAddCandidate.TabIndex = 5;
             btnAddCandidate.Text = "Add Candidate";
-            btnAddCandidate.UseVisualStyleBackColor = true;
+            btnAddCandidate.UseVisualStyleBackColor = false;
             btnAddCandidate.Click += btnAddCandidate_Click;
             // 
             // btnAddStudent
             // 
-            btnAddStudent.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnAddStudent.Location = new Point(298, 130);
+            btnAddStudent.BackColor = Color.Transparent;
+            btnAddStudent.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            btnAddStudent.ForeColor = Color.Black;
+            btnAddStudent.Location = new Point(42, 21);
             btnAddStudent.Name = "btnAddStudent";
-            btnAddStudent.Size = new Size(218, 66);
+            btnAddStudent.Size = new Size(109, 50);
             btnAddStudent.TabIndex = 4;
             btnAddStudent.Text = "Add Student";
-            btnAddStudent.UseVisualStyleBackColor = true;
+            btnAddStudent.UseVisualStyleBackColor = false;
             btnAddStudent.Click += btnAddStudent_Click;
             // 
             // btnStatistics
             // 
-            btnStatistics.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            btnStatistics.Location = new Point(298, 274);
+            btnStatistics.BackColor = Color.Transparent;
+            btnStatistics.Font = new Font("Arial Narrow", 12F, FontStyle.Bold);
+            btnStatistics.ForeColor = Color.Black;
+            btnStatistics.Location = new Point(46, 21);
             btnStatistics.Name = "btnStatistics";
-            btnStatistics.Size = new Size(218, 66);
+            btnStatistics.Size = new Size(109, 50);
             btnStatistics.TabIndex = 8;
             btnStatistics.Text = "Statistics";
-            btnStatistics.UseVisualStyleBackColor = true;
+            btnStatistics.UseVisualStyleBackColor = false;
             btnStatistics.Click += btnStatistics_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Transparent;
+            panel1.Controls.Add(btnAddStudent);
+            panel1.Location = new Point(26, 164);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(200, 243);
+            panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.Controls.Add(btnAddCandidate);
+            panel2.Location = new Point(251, 164);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(200, 243);
+            panel2.TabIndex = 10;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Transparent;
+            panel3.Controls.Add(btnStatistics);
+            panel3.Location = new Point(475, 164);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(200, 243);
+            panel3.TabIndex = 11;
             // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(btnStatistics);
+            BackgroundImage = Properties.Resources.Untitled_design__2_;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(711, 450);
             Controls.Add(btnLogout);
             Controls.Add(lblAdminName);
-            Controls.Add(btnAddCandidate);
-            Controls.Add(btnAddStudent);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
+            Controls.Add(panel3);
+            DoubleBuffered = true;
             Name = "Form7";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin Interface";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +158,8 @@
         private Button btnAddCandidate;
         private Button btnAddStudent;
         private Button btnStatistics;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
     }
 }

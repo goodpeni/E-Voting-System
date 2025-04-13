@@ -18,6 +18,12 @@ namespace E_Voting_System
         public Form3()
         {
             InitializeComponent();
+            lblLogin.Left = (this.ClientSize.Width - lblLogin.Width) / 2;
+            pnlADMIN.Left = (this.ClientSize.Width - pnlADMIN.Width) / 2;
+            pnlADMIN.BackColor = Color.FromArgb(70, 0, 0, 0);
+            lblAdminID.ForeColor = Color.White;
+            lblPassword.ForeColor = Color.White;
+            chkShowPass.ForeColor = Color.White;
         }
 
         public void Login()
@@ -50,7 +56,7 @@ namespace E_Voting_System
                     txtAdminPass.Clear();
                     chkShowPass.Checked = false;
                 }
-                databaseConnection.Close(); 
+                databaseConnection.Close();
             }
             catch (Exception ex)
             {
@@ -79,8 +85,16 @@ namespace E_Voting_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Login();          
+            Login();
         }
+        private void Form3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login();
+            }
+        }
+
     }
 }
 
