@@ -230,7 +230,7 @@
             DoubleBuffered = true;
             Name = "Form7";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Admin Interface";
+            Text = " ";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picBOXStud).EndInit();

@@ -18,6 +18,26 @@ namespace E_Voting_System
             btnAddStudent.ForeColor = Color.White;
             btnAddCandidate.ForeColor = Color.White;
             btnStatistics.ForeColor = Color.White;
+
+            btnAddStudent.FlatStyle = FlatStyle.Flat;
+            btnAddStudent.FlatAppearance.BorderSize = 0;
+            btnAddStudent.BackColor = Color.Transparent;
+            btnAddStudent.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnAddStudent.FlatAppearance.MouseDownBackColor = Color.Transparent;
+
+            btnAddCandidate.FlatStyle = FlatStyle.Flat;
+            btnAddCandidate.FlatAppearance.BorderSize = 0;
+            btnAddCandidate.BackColor = Color.Transparent;
+            btnAddCandidate.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnAddCandidate.FlatAppearance.MouseDownBackColor = Color.Transparent;
+
+            btnStatistics.FlatStyle = FlatStyle.Flat;
+            btnStatistics.FlatAppearance.BorderSize = 0;
+            btnStatistics.BackColor = Color.Transparent;
+            btnStatistics.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            btnStatistics.FlatAppearance.MouseDownBackColor = Color.Transparent;
+
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
