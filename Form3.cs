@@ -13,22 +13,22 @@ namespace E_Voting_System
 {
     public partial class Form3 : Form
     {
+        bool passVisible = false;
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=EVotingDB";
 
         public Form3()
         {
             InitializeComponent();
-            lblLogin.Left = (this.ClientSize.Width - lblLogin.Width) / 2;
-            pnlADMIN.Left = (this.ClientSize.Width - pnlADMIN.Width) / 2;
-            pnlADMIN.BackColor = Color.FromArgb(70, 0, 0, 0);
-            lblAdminID.ForeColor = Color.White;
-            lblPassword.ForeColor = Color.White;
-            chkShowPass.ForeColor = Color.White;
+            LblTitle1.Left = (this.ClientSize.Width - LblTitle1.Width) / 2;
+            LblTitle2.Left = (this.ClientSize.Width - LblTitle2.Width) / 2;
+            PnlAdmin.Left = (this.ClientSize.Width - PnlAdmin.Width) / 2;
+            PnlAdmin.BackColor = Color.FromArgb(70, 0, 0, 0);
         }
+
 
         public void Login()
         {
-            string query = "SELECT * FROM admin_info WHERE admin_id = '" + txtAdminID.Text + "'AND admin_password = '" + txtAdminPass.Text + "'";
+            string query = "SELECT * FROM admin_info WHERE admin_id = '" + TxtUserID.Text + "'AND admin_password = '" + TxtPass.Text + "'";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;
@@ -44,16 +44,13 @@ namespace E_Voting_System
                     while (reader.Read())
                     {
                         MessageBox.Show("Login Success!");
-                        Form7 Form7 = new Form7();
-                        Form7.Show();
-                        this.Hide();
                     }
                 }
                 else
                 {
                     MessageBox.Show("Oops! Something went wrong. Please try again!");
-                    txtAdminID.Clear();
-                    txtAdminPass.Clear();
+                    TxtUserID.Clear();
+                    TxtPass.Clear();
                     chkShowPass.Checked = false;
                 }
                 databaseConnection.Close();
@@ -66,20 +63,20 @@ namespace E_Voting_System
 
         private void btnGoBack_Click(object sender, EventArgs e)
         {
-            Form1 Form1 = new Form1();
-            Form1.Show();
-            this.Hide();
+            Application.Exit();
         }
 
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)
         {
             if (chkShowPass.Checked)
             {
-                txtAdminPass.PasswordChar = '\0';
+                TxtPass.PasswordChar = '\0';
+                PicBoxClosed.BackgroundImage = Properties.Resources.view;
             }
             else
             {
-                txtAdminPass.PasswordChar = '*';
+                TxtPass.PasswordChar = '*';
+                PicBoxClosed.BackgroundImage = Properties.Resources.eye;
             }
         }
 
@@ -94,7 +91,6 @@ namespace E_Voting_System
                 Login();
             }
         }
-
     }
 }
 
