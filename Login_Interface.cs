@@ -11,12 +11,12 @@ using MySql.Data.MySqlClient;
 
 namespace E_Voting_System
 {
-    public partial class Form3 : Form
+    public partial class Login_Interface : Form
     {
         bool passVisible = false;
         string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=EVotingDB";
 
-        public Form3()
+        public Login_Interface()
         {
             InitializeComponent();
             LblTitle1.Left = (this.ClientSize.Width - LblTitle1.Width) / 2;
@@ -91,6 +91,8 @@ namespace E_Voting_System
                 Login();
             }
         }
+
+     
     }
 }
 
