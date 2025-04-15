@@ -16,5 +16,12 @@ namespace E_Voting_System
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Manage_Partylists formB6 = new Manage_Partylists();
+            this.Hide();
+            formB6.Show();
+        }
     }
 }

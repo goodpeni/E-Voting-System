@@ -16,5 +16,12 @@ namespace E_Voting_System
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Stud_View_Election formA5 = new Stud_View_Election();
+            this.Hide();
+            formA5.Show();
+        }
     }
 }

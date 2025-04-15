@@ -51,5 +51,12 @@ namespace E_Voting_System
             this.Hide();
             FormA6.Show();
         }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Login_Interface form1 = new Login_Interface();
+            this.Hide();
+            form1.Show();
+        }
     }
 }

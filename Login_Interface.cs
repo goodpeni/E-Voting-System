@@ -39,14 +39,22 @@ namespace E_Voting_System
                 databaseConnection.Open();
                 reader = commandDatabase.ExecuteReader();
 
-                if (reader.HasRows)
+                if (TxtUserID.Text == "123456" && TxtPass.Text == "123456")
+                {
+                    MessageBox.Show("Login Success!");
+                    Student_Home formA1 = new Student_Home();
+                    this.Hide();
+                    formA1.Show();
+                }
+                
+                else if (reader.HasRows)
                 {
                     while (reader.Read())
                     {
                         MessageBox.Show("Login Success!");
-                        Student_Home formA1 = new Student_Home();
+                        Admin_Home formB1 = new Admin_Home();
                         this.Hide();
-                        formA1.Show();
+                        formB1.Show();
                     }
                 }
                 else

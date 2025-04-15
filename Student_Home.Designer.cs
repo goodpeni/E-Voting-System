@@ -33,6 +33,7 @@
             PicBoxVoteNow = new PictureBox();
             PicBoxViewElection = new PictureBox();
             PicBoxMyVote = new PictureBox();
+            BtnLogout = new Button();
             ((System.ComponentModel.ISupportInitialize)PicBoxOverview).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicBoxProfile).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicBoxVoteNow).BeginInit();
@@ -42,6 +43,7 @@
             // 
             // PicBoxOverview
             // 
+            PicBoxOverview.BorderStyle = BorderStyle.FixedSingle;
             PicBoxOverview.Location = new Point(28, 27);
             PicBoxOverview.Name = "PicBoxOverview";
             PicBoxOverview.Size = new Size(125, 62);
@@ -51,6 +53,7 @@
             // 
             // PicBoxProfile
             // 
+            PicBoxProfile.BorderStyle = BorderStyle.FixedSingle;
             PicBoxProfile.Location = new Point(193, 27);
             PicBoxProfile.Name = "PicBoxProfile";
             PicBoxProfile.Size = new Size(125, 62);
@@ -60,6 +63,7 @@
             // 
             // PicBoxVoteNow
             // 
+            PicBoxVoteNow.BorderStyle = BorderStyle.FixedSingle;
             PicBoxVoteNow.Location = new Point(356, 27);
             PicBoxVoteNow.Name = "PicBoxVoteNow";
             PicBoxVoteNow.Size = new Size(125, 62);
@@ -69,6 +73,7 @@
             // 
             // PicBoxViewElection
             // 
+            PicBoxViewElection.BorderStyle = BorderStyle.FixedSingle;
             PicBoxViewElection.Location = new Point(110, 126);
             PicBoxViewElection.Name = "PicBoxViewElection";
             PicBoxViewElection.Size = new Size(125, 62);
@@ -78,6 +83,7 @@
             // 
             // PicBoxMyVote
             // 
+            PicBoxMyVote.BorderStyle = BorderStyle.FixedSingle;
             PicBoxMyVote.Location = new Point(274, 126);
             PicBoxMyVote.Name = "PicBoxMyVote";
             PicBoxMyVote.Size = new Size(125, 62);
@@ -85,11 +91,22 @@
             PicBoxMyVote.TabStop = false;
             PicBoxMyVote.Click += PicBoxMyVote_Click;
             // 
+            // BtnLogout
+            // 
+            BtnLogout.Location = new Point(685, 27);
+            BtnLogout.Name = "BtnLogout";
+            BtnLogout.Size = new Size(94, 29);
+            BtnLogout.TabIndex = 5;
+            BtnLogout.Text = "button1";
+            BtnLogout.UseVisualStyleBackColor = true;
+            BtnLogout.Click += BtnLogout_Click;
+            // 
             // Student_Home
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtnLogout);
             Controls.Add(PicBoxMyVote);
             Controls.Add(PicBoxViewElection);
             Controls.Add(PicBoxVoteNow);
@@ -112,5 +129,6 @@
         private PictureBox PicBoxVoteNow;
         private PictureBox PicBoxViewElection;
         private PictureBox PicBoxMyVote;
+        private Button BtnLogout;
     }
 }

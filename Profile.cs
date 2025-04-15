@@ -16,5 +16,12 @@ namespace E_Voting_System
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Student_Home formA1 = new Student_Home();
+            this.Hide();
+            formA1.Show();
+        }
     }
 }

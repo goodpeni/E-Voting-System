@@ -16,5 +16,26 @@ namespace E_Voting_System
         {
             InitializeComponent();
         }
+
+        private void PicBoxLeaderboards_Click(object sender, EventArgs e)
+        {
+            Leaderboards formB31 = new Leaderboards();
+            this.Hide();
+            formB31.Show();
+        }
+
+        private void PicBoxAnalytics_Click(object sender, EventArgs e)
+        {
+            Analytics formB32 = new Analytics();
+            this.Hide();
+            formB32.Show();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            View_Election formB3 = new View_Election();
+            this.Hide();
+            formB3.Show();
+        }
     }
 }

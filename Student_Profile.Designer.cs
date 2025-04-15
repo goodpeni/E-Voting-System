@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Student_Profile";
+            BtnBack = new Button();
+            SuspendLayout();
+            // 
+            // BtnBack
+            // 
+            BtnBack.Location = new Point(694, 12);
+            BtnBack.Name = "BtnBack";
+            BtnBack.Size = new Size(94, 29);
+            BtnBack.TabIndex = 0;
+            BtnBack.Text = "button1";
+            BtnBack.UseVisualStyleBackColor = true;
+            BtnBack.Click += BtnBack_Click;
+            // 
+            // Student_Profile
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(BtnBack);
+            Name = "Student_Profile";
+            Text = "Student_Profile";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnBack;
     }
 }
