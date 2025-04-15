@@ -44,6 +44,9 @@ namespace E_Voting_System
                     while (reader.Read())
                     {
                         MessageBox.Show("Login Success!");
+                        Student_Home formA1 = new Student_Home();
+                        this.Hide();
+                        formA1.Show();
                     }
                 }
                 else
