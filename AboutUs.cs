@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace E_Voting_System
 {
-    public partial class Overview : Form
+    public partial class AboutUs : Form
     {
-        public Overview()
+        public AboutUs()
         {
             InitializeComponent();
         }
@@ -22,13 +22,6 @@ namespace E_Voting_System
             Student_Home formA1 = new Student_Home();
             this.Hide();
             formA1.Show();
-        }
-
-        private void BtnLogout_Click(object sender, EventArgs e)
-        {
-            Login_Interface form1 = new Login_Interface();
-            this.Hide();
-            form1.Show();
         }
     }
 }
