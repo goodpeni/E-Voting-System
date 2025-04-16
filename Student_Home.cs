@@ -24,13 +24,6 @@ namespace E_Voting_System
             FormA2.Show();
         }
 
-        private void PicBoxProfile_Click(object sender, EventArgs e)
-        {
-            Profile FormA3 = new Profile();
-            this.Hide();
-            FormA3.Show();
-        }
-
         private void PicBoxVoteNow_Click(object sender, EventArgs e)
         {
             Vote_Now FormA4 = new Vote_Now();
@@ -57,6 +50,34 @@ namespace E_Voting_System
             Login_Interface form1 = new Login_Interface();
             this.Hide();
             form1.Show();
+        }
+
+        private void LblSideViewProfile_Click(object sender, EventArgs e)
+        {
+            Profile FormA3 = new Profile();
+            this.Hide();
+            FormA3.Show();
+        }
+
+        private void RdoLight_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoLight.Checked)
+            {
+                Student_Home.ActiveForm.BackColor = Color.White;
+            }
+        }
+
+        private void RdoDark_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RdoDark.Checked)
+            {
+                Student_Home.ActiveForm.BackColor = Color.LightGray;
+            }
+        }
+
+        private void Student_Home_Load(object sender, EventArgs e)
+        {
+            LblSideHome.BackColor = Color.SteelBlue;
         }
     }
 }
