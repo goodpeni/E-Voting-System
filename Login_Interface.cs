@@ -14,7 +14,7 @@ namespace E_Voting_System
     public partial class Login_Interface : Form
     {
         bool passVisible = false;
-        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=EVotingDB";
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=evotingdb";
 
         public Login_Interface()
         {
@@ -28,49 +28,63 @@ namespace E_Voting_System
 
         public void Login()
         {
-            string query = "SELECT * FROM admin_info WHERE admin_id = '" + TxtUserID.Text + "'AND admin_password = '" + TxtPass.Text + "'";
-            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
-            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
-            commandDatabase.CommandTimeout = 60;
-            MySqlDataReader reader;
+            string adminQuery = "SELECT * FROM admin WHERE admin_name = @id AND admin_password = @pass";
+            string studentQuery = "SELECT * FROM student WHERE student_id = @id AND student_password = @pass";
 
-            try
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
-                databaseConnection.Open();
-                reader = commandDatabase.ExecuteReader();
+                try
+                {
+                    connection.Open();
 
-                if (TxtUserID.Text == "123456" && TxtPass.Text == "123456")
-                {
-                    MessageBox.Show("Login Success!");
-                    Student_Home formA1 = new Student_Home();
-                    this.Hide();
-                    formA1.Show();
-                }
-                
-                else if (reader.HasRows)
-                {
-                    while (reader.Read())
+                    using (MySqlCommand studentCmd = new MySqlCommand(studentQuery, connection))
                     {
-                        MessageBox.Show("Login Success!");
-                        Admin_Home formB1 = new Admin_Home();
-                        this.Hide();
-                        formB1.Show();
+                        studentCmd.Parameters.AddWithValue("@id", TxtUserID.Text);
+                        studentCmd.Parameters.AddWithValue("@pass", TxtPass.Text);
+
+                        using (MySqlDataReader studentReader = studentCmd.ExecuteReader())
+                        {
+                            if (studentReader.Read())
+                            {
+                                MessageBox.Show("Login Success! (Student)");
+                                Student_Home studentForm = new Student_Home();
+                                this.Hide();
+                                studentForm.Show();
+                                return;
+                            }
+                        }
                     }
-                }
-                else
-                {
+
+                    using (MySqlCommand adminCmd = new MySqlCommand(adminQuery, connection))
+                    {
+                        adminCmd.Parameters.AddWithValue("@id", TxtUserID.Text);
+                        adminCmd.Parameters.AddWithValue("@pass", TxtPass.Text);
+
+                        using (MySqlDataReader adminReader = adminCmd.ExecuteReader())
+                        {
+                            if (adminReader.Read())
+                            {
+                                MessageBox.Show("Login Success! (Admin)");
+                                Admin_Home adminForm = new Admin_Home();
+                                this.Hide();
+                                adminForm.Show();
+                                return;
+                            }
+                        }
+                    }
+
                     MessageBox.Show("Oops! Something went wrong. Please try again!");
                     TxtUserID.Clear();
                     TxtPass.Clear();
                     chkShowPass.Checked = false;
                 }
-                databaseConnection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
+
 
         private void btnGoBack_Click(object sender, EventArgs e)
         {
