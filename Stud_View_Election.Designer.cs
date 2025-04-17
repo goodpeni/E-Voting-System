@@ -51,13 +51,13 @@
             LblCandidates = new Label();
             LblStatus = new Label();
             PnlPartylists = new Panel();
+            LblPartylistsDesc = new Label();
             LblPartylists = new Label();
             PnlPositions = new Panel();
+            LblPositionsDesc = new Label();
             LblPositions = new Label();
             LblTitle = new Label();
             LblDescription = new Label();
-            LblPositionsDesc = new Label();
-            LblPartylistsDesc = new Label();
             ((System.ComponentModel.ISupportInitialize)PicBoxCandidates).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicBoxPositions).BeginInit();
             ((System.ComponentModel.ISupportInitialize)PicBoxPartylists).BeginInit();
@@ -125,7 +125,7 @@
             PnlNavigation.Location = new Point(0, 0);
             PnlNavigation.Margin = new Padding(3, 2, 3, 2);
             PnlNavigation.Name = "PnlNavigation";
-            PnlNavigation.Size = new Size(348, 1041);
+            PnlNavigation.Size = new Size(348, 1100);
             PnlNavigation.TabIndex = 8;
             // 
             // RdoDark
@@ -355,6 +355,16 @@
             PnlPartylists.Size = new Size(436, 627);
             PnlPartylists.TabIndex = 10;
             // 
+            // LblPartylistsDesc
+            // 
+            LblPartylistsDesc.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblPartylistsDesc.Location = new Point(27, 399);
+            LblPartylistsDesc.Name = "LblPartylistsDesc";
+            LblPartylistsDesc.Size = new Size(379, 95);
+            LblPartylistsDesc.TabIndex = 4;
+            LblPartylistsDesc.Text = "Check the groups or organizations each candidate represents.";
+            LblPartylistsDesc.TextAlign = ContentAlignment.TopCenter;
+            // 
             // LblPartylists
             // 
             LblPartylists.Font = new Font("Arial Narrow", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -375,6 +385,16 @@
             PnlPositions.Name = "PnlPositions";
             PnlPositions.Size = new Size(436, 627);
             PnlPositions.TabIndex = 11;
+            // 
+            // LblPositionsDesc
+            // 
+            LblPositionsDesc.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblPositionsDesc.Location = new Point(26, 399);
+            LblPositionsDesc.Name = "LblPositionsDesc";
+            LblPositionsDesc.Size = new Size(379, 95);
+            LblPositionsDesc.TabIndex = 3;
+            LblPositionsDesc.Text = "See the roles available and the candidates running for each one.";
+            LblPositionsDesc.TextAlign = ContentAlignment.TopCenter;
             // 
             // LblPositions
             // 
@@ -410,33 +430,13 @@
             LblDescription.Text = "See all candidates, their positions, and partylists in one place. Quickly browse and get to know who’s running before you vote.";
             LblDescription.TextAlign = ContentAlignment.TopCenter;
             // 
-            // LblPositionsDesc
-            // 
-            LblPositionsDesc.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblPositionsDesc.Location = new Point(26, 399);
-            LblPositionsDesc.Name = "LblPositionsDesc";
-            LblPositionsDesc.Size = new Size(379, 95);
-            LblPositionsDesc.TabIndex = 3;
-            LblPositionsDesc.Text = "See the roles available and the candidates running for each one.";
-            LblPositionsDesc.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // LblPartylistsDesc
-            // 
-            LblPartylistsDesc.Font = new Font("Arial Narrow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblPartylistsDesc.Location = new Point(27, 399);
-            LblPartylistsDesc.Name = "LblPartylistsDesc";
-            LblPartylistsDesc.Size = new Size(379, 95);
-            LblPartylistsDesc.TabIndex = 4;
-            LblPartylistsDesc.Text = "Check the groups or organizations each candidate represents.";
-            LblPartylistsDesc.TextAlign = ContentAlignment.TopCenter;
-            // 
             // Stud_View_Election
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.lightmode;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1904, 1100);
             Controls.Add(LblDescription);
             Controls.Add(LblTitle);
             Controls.Add(PnlPositions);

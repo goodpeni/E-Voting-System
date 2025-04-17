@@ -83,7 +83,7 @@
             PnlNavigation.Location = new Point(0, 0);
             PnlNavigation.Margin = new Padding(3, 2, 3, 2);
             PnlNavigation.Name = "PnlNavigation";
-            PnlNavigation.Size = new Size(348, 1041);
+            PnlNavigation.Size = new Size(348, 1100);
             PnlNavigation.TabIndex = 7;
             // 
             // RdoDark
@@ -418,7 +418,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.lightmode;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1904, 1100);
             Controls.Add(TxtGradeSection);
             Controls.Add(LblGradeSection);
             Controls.Add(TxtAge);

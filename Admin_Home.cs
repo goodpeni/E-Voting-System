@@ -58,5 +58,7 @@ namespace E_Voting_System
             this.Hide();
             form1.Show();
         }
+
+     
     }
 }
