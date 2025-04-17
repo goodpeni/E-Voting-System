@@ -39,9 +39,9 @@ namespace E_Voting_System
 
         private void PicBoxOverview_Click(object sender, EventArgs e)
         {
-            Overview FormA2 = new Overview();
+            /*Overview FormA2 = new Overview();
             this.Hide();
-            FormA2.Show();
+            FormA2.Show();*/
         }
 
         private void PicBoxViewElection_Click(object sender, EventArgs e)
@@ -154,30 +154,35 @@ namespace E_Voting_System
 
         private void PnlOverview_Paint(object sender, PaintEventArgs e)
         {
-            Overview FormA2 = new Overview();
+            /*Overview FormA2 = new Overview();
             this.Hide();
-            FormA2.Show();
+            FormA2.Show();*/
         }
 
         private void PnlViewElection_Paint(object sender, PaintEventArgs e)
         {
-            Stud_View_Election FormA5 = new Stud_View_Election();
+            /*Stud_View_Election FormA5 = new Stud_View_Election();
             this.Hide();
-            FormA5.Show();
+            FormA5.Show();*/
         }
 
         private void PnlMyVote_Paint(object sender, PaintEventArgs e)
         {
-            MyVote FormA6 = new MyVote();
+            /*MyVote FormA6 = new MyVote();
             this.Hide();
-            FormA6.Show();
+            FormA6.Show();*/
         }
 
         private void PnlVoteNow_Paint(object sender, PaintEventArgs e)
         {
-            Vote_Now FormA4 = new Vote_Now();
+            /*Vote_Now FormA4 = new Vote_Now();
             this.Hide();
-            FormA4.Show();
+            FormA4.Show();*/
+        }
+
+        private void LblSideHome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

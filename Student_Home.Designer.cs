@@ -149,7 +149,7 @@
             PnlNavigation.Location = new Point(0, 0);
             PnlNavigation.Margin = new Padding(3, 2, 3, 2);
             PnlNavigation.Name = "PnlNavigation";
-            PnlNavigation.Size = new Size(348, 1181);
+            PnlNavigation.Size = new Size(348, 749);
             PnlNavigation.TabIndex = 6;
             // 
             // LblInfo
@@ -285,6 +285,7 @@
             LblSideHome.TabIndex = 19;
             LblSideHome.Text = "               HOME";
             LblSideHome.TextAlign = ContentAlignment.MiddleLeft;
+            LblSideHome.Click += LblSideHome_Click;
             // 
             // LblSideTitle
             // 
@@ -426,7 +427,7 @@
             BackColor = Color.White;
             BackgroundImage = Properties.Resources.Untitled_design__2_;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1924, 1181);
+            ClientSize = new Size(1370, 749);
             ControlBox = false;
             Controls.Add(LblReadyToVote);
             Controls.Add(LblDescription);
