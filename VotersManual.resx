@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="LblViewElectionDesc.Text" xml:space="preserve">
+    <value>Once logged n, you will be directed to the student home page.
+
+- You may browse the View Election control to view the lists of candidates, positions, and partylists.
+
+- Each candidate will be listed together with their student's profile and qualifications.
+</value>
+  </data>
+  <data name="LblCastVoteDesc.Text" xml:space="preserve">
+    <value>After reviewing the candidates, select your preferred candidate(s) for each position.
+
+You can select only one candidate for each positon except Peace Officer election.
+
+Once you make your selectons, double-check them to ensure they are accurate. </value>
+  </data>
 </root>

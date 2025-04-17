@@ -121,6 +121,9 @@
   <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="E-VOTING SYSTEM LOGO_20250413_115438_0000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO_20250413_115438_0000.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,6 +132,12 @@
   </data>
   <data name="Untitled design (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="research" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\research.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotation-lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotation-lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="E-VOTING SYSTEM LOGO_20250413_115438_0002" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO_20250413_115438_0002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,17 +148,32 @@
   <data name="image1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lightmode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightmode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="official logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\official logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elections1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elections1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="E-VOTING SYSTEM LOGO (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Untitled design (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Untitled design (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="power-off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power-off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="power off light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power off light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="e-voting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e-voting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elections" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elections.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +187,14 @@
   <data name="e-voting (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\e-voting (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="darkmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darkmode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightmode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Untitled design (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Untitled design (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="E-VOTING SYSTEM LOGO (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO (9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,14 +205,32 @@
   <data name="E-VOTING SYSTEM LOGO (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user-scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manual-voting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\manual-voting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="E-VOTING SYSTEM LOGO_20250413_115438_00011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO_20250413_115438_00011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="E-VOTING SYSTEM LOGO (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO (7).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="E-VOTING SYSTEM LOGO (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\E-VOTING SYSTEM LOGO (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voting-box1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voting-box1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,19 +244,13 @@
   <data name="Untitled design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="voting-box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voting-box.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lightreturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightreturn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-scan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-scan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rotation-lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rotation-lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

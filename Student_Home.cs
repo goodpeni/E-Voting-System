@@ -39,9 +39,9 @@ namespace E_Voting_System
 
         private void PicBoxOverview_Click(object sender, EventArgs e)
         {
-            /*Overview FormA2 = new Overview();
+            VotersManual FormA2 = new VotersManual();
             this.Hide();
-            FormA2.Show();*/
+            FormA2.Show();
         }
 
         private void PicBoxViewElection_Click(object sender, EventArgs e)
@@ -76,7 +76,38 @@ namespace E_Voting_System
         {
             if (RdoLight.Checked)
             {
-                Student_Home.ActiveForm.BackColor = Color.White;
+                Student_Home.ActiveForm.BackgroundImage = Properties.Resources.lightmode;
+                PnlNavigation.BackColor = Color.LightSteelBlue;
+                LblSideTitle.ForeColor = Color.Black;
+                LblSidePositions.ForeColor = Color.Black;
+                LblSidePartylists.ForeColor = Color.Black;
+                LblSideVotersManual.ForeColor = Color.Black;
+                LblSideHome.ForeColor = Color.Black;
+                LblSideHome.BackColor = Color.SteelBlue;
+                LblSideMyVote.ForeColor = Color.Black;
+                LblSideViewElection.ForeColor = Color.Black;
+                LblSideViewProfile.ForeColor = Color.Black;
+                LblSideVoteNow.ForeColor = Color.Black;
+                LblCandidates.ForeColor = Color.Black;
+                LblInfo.ForeColor = Color.Black;
+                LblTheme.ForeColor = Color.Black;
+                RdoDark.ForeColor = Color.Black;
+                RdoLight.ForeColor = Color.Black;
+
+
+                LblDescription.ForeColor = Color.Black;
+                LblGreetings.ForeColor = Color.Black;
+                LblYLevel.ForeColor = Color.Black;
+                LblReadyToVote.ForeColor = Color.Black;
+                LblOverview.ForeColor = Color.Black;
+                LblVotersManualDesc.ForeColor = Color.Black;
+                LblViewElection.ForeColor = Color.Black;
+                LblViewElectionDesc.ForeColor = Color.Black;
+                LblMyVote.ForeColor = Color.Black;
+                LblMyVoteDesc.ForeColor = Color.Black;
+                LblStatus.ForeColor = Color.Black;
+
+                BtnLogout.BackgroundImage = Properties.Resources.power_off;
             }
         }
 
@@ -84,7 +115,40 @@ namespace E_Voting_System
         {
             if (RdoDark.Checked)
             {
-                Student_Home.ActiveForm.BackColor = Color.LightGray;
+                Student_Home.ActiveForm.BackgroundImage = Properties.Resources.darkmode;
+                PnlNavigation.BackColor = Color.SteelBlue;
+                LblSideTitle.ForeColor = Color.White;
+                LblSidePositions.ForeColor = Color.White;
+                LblSidePartylists.ForeColor = Color.White;
+                LblSideVotersManual.ForeColor = Color.White;
+                LblSideHome.ForeColor = Color.White;
+                LblSideHome.BackColor = Color.LightSteelBlue;
+                LblSideMyVote.ForeColor = Color.White;
+                LblSideViewElection.ForeColor = Color.White;
+                LblSideViewProfile.ForeColor = Color.White;
+                LblSideVoteNow.ForeColor = Color.White;
+                LblCandidates.ForeColor = Color.White;
+                LblInfo.ForeColor = Color.White;
+                LblTheme.ForeColor = Color.White;
+                RdoDark.ForeColor = Color.White;
+                RdoLight.ForeColor = Color.White;
+
+
+                LblDescription.ForeColor = Color.White;
+                LblGreetings.ForeColor = Color.White;
+                LblYLevel.ForeColor = Color.White;
+                LblReadyToVote.ForeColor = Color.White;
+                LblOverview.ForeColor = Color.White;
+                LblVotersManualDesc.ForeColor = Color.White;
+                LblViewElection.ForeColor = Color.White;
+                LblViewElectionDesc.ForeColor = Color.White;
+                LblMyVote.ForeColor = Color.White;
+                LblMyVoteDesc.ForeColor = Color.White;
+                LblStatus.ForeColor = Color.White;
+                RdoLight.Checked = false;
+
+                BtnLogout.BackgroundImage = Properties.Resources.power_off_light;
+
             }
         }
 
@@ -98,7 +162,7 @@ namespace E_Voting_System
 
         private void LblSideOverview_Click(object sender, EventArgs e)
         {
-            Overview formA2 = new Overview();
+            VotersManual formA2 = new VotersManual();
             this.Hide();
             formA2.Show();
         }
@@ -152,35 +216,35 @@ namespace E_Voting_System
             formA7.Show();
         }
 
-        private void PnlOverview_Paint(object sender, PaintEventArgs e)
+        private void BtnVoteNow_Click(object sender, EventArgs e)
         {
-            /*Overview FormA2 = new Overview();
+            Vote_Now FormA4 = new Vote_Now();
             this.Hide();
-            FormA2.Show();*/
+            FormA4.Show();
         }
 
-        private void PnlViewElection_Paint(object sender, PaintEventArgs e)
+        private void PnlOverview_Click(object sender, EventArgs e)
         {
-            /*Stud_View_Election FormA5 = new Stud_View_Election();
+            VotersManual FormA2 = new VotersManual();
             this.Hide();
-            FormA5.Show();*/
+            FormA2.Show();
         }
 
-        private void PnlMyVote_Paint(object sender, PaintEventArgs e)
+        private void PnlViewElection_Click(object sender, EventArgs e)
         {
-            /*MyVote FormA6 = new MyVote();
+            Stud_View_Election FormA5 = new Stud_View_Election();
             this.Hide();
-            FormA6.Show();*/
+            FormA5.Show();
         }
 
-        private void PnlVoteNow_Paint(object sender, PaintEventArgs e)
+        private void PnlMyVote_Click(object sender, EventArgs e)
         {
-            /*Vote_Now FormA4 = new Vote_Now();
+            MyVote FormA6 = new MyVote();
             this.Hide();
-            FormA4.Show();*/
+            FormA6.Show();
         }
 
-        private void LblSideHome_Click(object sender, EventArgs e)
+        private void LblTheme_Click(object sender, EventArgs e)
         {
 
         }
