@@ -337,7 +337,7 @@
             // 
             LblStatus.BackColor = Color.Transparent;
             LblStatus.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            LblStatus.Location = new Point(364, 949);
+            LblStatus.Location = new Point(364, 1009);
             LblStatus.Name = "LblStatus";
             LblStatus.Size = new Size(1524, 76);
             LblStatus.TabIndex = 10;
