@@ -53,13 +53,6 @@ namespace E_Voting_System
             formA2.Show();
         }
 
-        private void LblCandidates_Click(object sender, EventArgs e)
-        {
-            Candidates formA51 = new Candidates();
-            this.Hide();
-            formA51.Show();
-        }
-
         private void LblSidePositions_Click(object sender, EventArgs e)
         {
             Positions formA52 = new Positions();
@@ -139,7 +132,7 @@ namespace E_Voting_System
             LblSideViewElection.ForeColor = Color.White;
             LblSideViewProfile.ForeColor = Color.White;
             LblSideVoteNow.ForeColor = Color.White;
-            LblSideCandidates.ForeColor = Color.White;
+            LblCandidates.ForeColor = Color.White;
             LblCandidates.ForeColor = Color.White;
             LblTheme.ForeColor = Color.White;
             RdoDark.ForeColor = Color.White;
@@ -153,6 +146,27 @@ namespace E_Voting_System
             LblPositions.ForeColor = Color.White;
             LblPositionsDesc.ForeColor = Color.White;
             LblStatus.ForeColor = Color.White;
+        }
+
+        private void LblInfo_Click(object sender, EventArgs e)
+        {
+            AboutUs formA7 = new AboutUs();
+            this.Hide();
+            formA7.Show();
+        }
+
+        private void LblSideCandidates_Click(object sender, EventArgs e)
+        {
+            Candidates formA51 = new Candidates();
+            this.Hide();
+            formA51.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Login_Interface form1 = new Login_Interface();
+            this.Hide();
+            form1.Show();
         }
     }
 }

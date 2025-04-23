@@ -83,42 +83,17 @@ namespace E_Voting_System
             LblSidePartylists.ForeColor = Color.Black;
             LblSideVotersManual.ForeColor = Color.Black;
             LblSideHome.ForeColor = Color.Black;
-            LblCandidates.BackColor = Color.SteelBlue;
+            LblSideCandidates.BackColor = Color.SteelBlue;
             LblSideMyVote.ForeColor = Color.Black;
             LblSideViewElection.ForeColor = Color.Black;
             LblSideViewProfile.ForeColor = Color.Black;
             LblSideVoteNow.ForeColor = Color.Black;
-            LblCandidates.ForeColor = Color.Black;
+            LblSideCandidates.ForeColor = Color.Black;
             LblTheme.ForeColor = Color.Black;
             RdoDark.ForeColor = Color.Black;
             RdoLight.ForeColor = Color.Black;
 
             LblFilter.ForeColor = Color.Black;
-            LblName1.ForeColor = Color.Black;
-            LblName2.ForeColor = Color.Black;
-            LblName3.ForeColor = Color.Black;
-            LblName4.ForeColor = Color.Black;
-            LblName5.ForeColor = Color.Black;
-            LblName6.ForeColor = Color.Black;
-            LblPosition1.ForeColor = Color.Black;
-            LblPosition2.ForeColor = Color.Black;
-            LblPosition3.ForeColor = Color.Black;
-            LblPosition4.ForeColor = Color.Black;
-            LblPosition5.ForeColor = Color.Black;
-            LblPosition6.ForeColor = Color.Black;
-            LblGradeSection1.ForeColor = Color.Black;
-            LblGradeSection2.ForeColor = Color.Black;
-            LblGradeSection3.ForeColor = Color.Black;
-            LblGradeSection4.ForeColor = Color.Black;
-            LblGradeSection5.ForeColor = Color.Black;
-            lblGradeSection6.ForeColor = Color.Black;
-            LblPartylist1.ForeColor = Color.Black;
-            LblPartylist2.ForeColor = Color.Black;
-            LblPartylist3.ForeColor = Color.Black;
-            LblPartylist4.ForeColor = Color.Black;
-            LblPartylist5.ForeColor = Color.Black;
-            LblPartylist6.ForeColor = Color.Black;
-
 
         }
 
@@ -131,41 +106,17 @@ namespace E_Voting_System
             LblSidePartylists.ForeColor = Color.White;
             LblSideVotersManual.ForeColor = Color.White;
             LblSideHome.ForeColor = Color.White;
-            LblCandidates.BackColor = Color.LightSteelBlue;
+            LblSideCandidates.BackColor = Color.LightSteelBlue;
             LblSideMyVote.ForeColor = Color.White;
             LblSideViewElection.ForeColor = Color.White;
             LblSideViewProfile.ForeColor = Color.White;
             LblSideVoteNow.ForeColor = Color.White;
-            LblCandidates.ForeColor = Color.White;
+            LblSideCandidates.ForeColor = Color.White;
             LblTheme.ForeColor = Color.White;
             RdoDark.ForeColor = Color.White;
             RdoLight.ForeColor = Color.White;
 
             LblFilter.ForeColor = Color.White;
-            LblName1.ForeColor = Color.White;
-            LblName2.ForeColor = Color.White;
-            LblName3.ForeColor = Color.White;
-            LblName4.ForeColor = Color.White;
-            LblName5.ForeColor = Color.White;
-            LblName6.ForeColor = Color.White;
-            LblPosition1.ForeColor = Color.White;
-            LblPosition2.ForeColor = Color.White;
-            LblPosition3.ForeColor = Color.White;
-            LblPosition4.ForeColor = Color.White;
-            LblPosition5.ForeColor = Color.White;
-            LblPosition6.ForeColor = Color.White;
-            LblGradeSection1.ForeColor = Color.White;
-            LblGradeSection2.ForeColor = Color.White;
-            LblGradeSection3.ForeColor = Color.White;
-            LblGradeSection4.ForeColor = Color.White;
-            LblGradeSection5.ForeColor = Color.White;
-            lblGradeSection6.ForeColor = Color.White;
-            LblPartylist1.ForeColor = Color.White;
-            LblPartylist2.ForeColor = Color.White;
-            LblPartylist3.ForeColor = Color.White;
-            LblPartylist4.ForeColor = Color.White;
-            LblPartylist5.ForeColor = Color.White;
-            LblPartylist6.ForeColor = Color.White;
         }
 
         private void BtnVoteNow_Click(object sender, EventArgs e)
@@ -173,6 +124,20 @@ namespace E_Voting_System
             Vote_Now formA4 = new Vote_Now();
             this.Hide();
             formA4.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Login_Interface form1 = new Login_Interface();
+            this.Hide();
+            form1.Show();
+        }
+
+        private void LblInfo_Click(object sender, EventArgs e)
+        {
+            AboutUs formA7 = new AboutUs();
+            this.Hide();
+            formA7.Show();
         }
     }
 }

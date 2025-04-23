@@ -89,7 +89,7 @@ namespace E_Voting_System
                 LblSideViewProfile.ForeColor = Color.Black;
                 LblSideViewProfile.BackColor = Color.SteelBlue;
                 LblSideVoteNow.ForeColor = Color.Black;
-                LblCandidates.ForeColor = Color.Black;
+                LblSideCandidates.ForeColor = Color.Black;
                 LblTheme.ForeColor = Color.Black;
                 RdoDark.ForeColor = Color.Black;
                 RdoLight.ForeColor = Color.Black;
@@ -118,7 +118,7 @@ namespace E_Voting_System
             LblSideViewProfile.ForeColor = Color.White;
             LblSideViewProfile.BackColor = Color.LightSteelBlue;
             LblSideVoteNow.ForeColor = Color.White;
-            LblCandidates.ForeColor = Color.White;
+            LblSideCandidates.ForeColor = Color.White;
             LblTheme.ForeColor = Color.White;
             RdoDark.ForeColor = Color.White;
             RdoLight.ForeColor = Color.White;
@@ -130,6 +130,20 @@ namespace E_Voting_System
             LblAge.ForeColor = Color.White;
             LblSex.ForeColor = Color.White;
             LblGradeSection.ForeColor = Color.White;
+        }
+
+        private void LblInfo_Click(object sender, EventArgs e)
+        {
+            AboutUs formA7 = new AboutUs();
+            this.Hide();
+            formA7.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Login_Interface form1 = new Login_Interface();
+            this.Hide();
+            form1.Show();
         }
     }
 }

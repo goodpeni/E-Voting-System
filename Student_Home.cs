@@ -244,9 +244,5 @@ namespace E_Voting_System
             FormA6.Show();
         }
 
-        private void LblTheme_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

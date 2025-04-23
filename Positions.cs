@@ -99,7 +99,7 @@ namespace E_Voting_System
             LblSideViewElection.ForeColor = Color.Black;
             LblSideViewProfile.ForeColor = Color.Black;
             LblSideVoteNow.ForeColor = Color.Black;
-            LblCandidates.ForeColor = Color.Black;
+            LblSideCandidates.ForeColor = Color.Black;
             LblTheme.ForeColor = Color.Black;
             RdoDark.ForeColor = Color.Black;
             RdoLight.ForeColor = Color.Black;
@@ -155,7 +155,7 @@ namespace E_Voting_System
             LblSideViewElection.ForeColor = Color.White;
             LblSideViewProfile.ForeColor = Color.White;
             LblSideVoteNow.ForeColor = Color.White;
-            LblCandidates.ForeColor = Color.White;
+            LblSideCandidates.ForeColor = Color.White;
             LblTheme.ForeColor = Color.White;
             RdoDark.ForeColor = Color.White;
             RdoLight.ForeColor = Color.White;
@@ -175,7 +175,7 @@ namespace E_Voting_System
             LblPresDesc.ForeColor = Color.White;
             LblViceDesc.ForeColor = Color.White;
             LblSecDesc.ForeColor = Color.White;
-            LblTreasDesc.ForeColor = Color.White    ;
+            LblTreasDesc.ForeColor = Color.White;
             LblAudiDesc.ForeColor = Color.White;
             LblPO1Desc.ForeColor = Color.White;
             LblPO2Desc.ForeColor = Color.White;
@@ -183,6 +183,30 @@ namespace E_Voting_System
             LblG4RepreDesc.ForeColor = Color.White;
             LblG5RepreDesc.ForeColor = Color.White;
             LblG6RepreDesc.ForeColor = Color.White;
+        }
+
+        private void PnlPIO_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LblInfo_Click(object sender, EventArgs e)
+        {
+            AboutUs formA7 = new AboutUs();
+            this.Hide();
+            formA7.Show();
+        }
+
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            Login_Interface form1 = new Login_Interface();
+            this.Hide();
+            form1.Show();
+        }
+
+        private void PnlNavigation_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -151,5 +151,12 @@ namespace E_Voting_System
                 LblSubmitVoteDesc.ForeColor = Color.White;
             }
         }
+
+        private void LblInfo_Click(object sender, EventArgs e)
+        {
+            AboutUs formA7 = new AboutUs();
+            this.Hide();
+            formA7.Show();
+        }
     }
 }
